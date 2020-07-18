@@ -19,15 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9127f8d4-437a-40b3-a896-7ce93c6ae16a" name="Default Changelist" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/requests_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/re01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/API_CHAO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/API_CHAO.iml" afterDir="false" />
+    <list default="true" id="9127f8d4-437a-40b3-a896-7ce93c6ae16a" name="Default Changelist" comment="second  commit   requests二次封装">
+      <change afterPath="$PROJECT_DIR$/common/check_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/requests_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/requests_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +172,14 @@
       <option name="presentableId" value="Default" />
       <updated>1594125358009</updated>
     </task>
+    <task id="LOCAL-00001" summary="second  commit   requests二次封装">
+      <created>1594737443914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594737443914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -194,6 +197,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second  commit   requests二次封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="second  commit   requests二次封装" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="591" y="354" key="Github.ShareDialog" timestamp="1594136648714">
       <screen x="0" y="0" width="1440" height="900" />
@@ -203,33 +210,33 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="512" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1594136656413" />
-    <state width="1419" height="235" key="GridCell.Tab.0.bottom" timestamp="1594735306779">
+    <state width="1419" height="235" key="GridCell.Tab.0.bottom" timestamp="1594912985178">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="235" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594735306779" />
+    <state width="1419" height="235" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912985178" />
     <state width="904" height="203" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1594654526275" />
     <state width="904" height="203" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1594547842858" />
-    <state width="1419" height="235" key="GridCell.Tab.0.center" timestamp="1594735306778">
+    <state width="1419" height="235" key="GridCell.Tab.0.center" timestamp="1594912985177">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="235" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594735306778" />
+    <state width="1419" height="235" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594912985177" />
     <state width="904" height="203" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1594654526273" />
     <state width="904" height="203" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1594547842857" />
-    <state width="1419" height="235" key="GridCell.Tab.0.left" timestamp="1594735306777">
+    <state width="1419" height="235" key="GridCell.Tab.0.left" timestamp="1594912985177">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="235" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594735306777" />
+    <state width="1419" height="235" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594912985177" />
     <state width="904" height="203" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1594654526272" />
     <state width="904" height="203" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1594547842856" />
-    <state width="1419" height="235" key="GridCell.Tab.0.right" timestamp="1594735306778">
+    <state width="1419" height="235" key="GridCell.Tab.0.right" timestamp="1594912985178">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="235" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594735306778" />
+    <state width="1419" height="235" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594912985178" />
     <state width="904" height="203" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1594654526274" />
     <state width="904" height="203" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1594547842857" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1594136695993">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1594737455362">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1594136695993" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1594737455362" />
   </component>
 </project>
