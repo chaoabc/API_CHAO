@@ -6,7 +6,6 @@
 
 import os
 from common.excel_utils import ExcelUtils
-from common import config
 from common.localconfig_utils import local_config
 
 current_path = os.path.dirname(__file__)

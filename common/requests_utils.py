@@ -55,23 +55,27 @@ class RequestsUtils():
         return result
 
     def request(self,step_info):
-        request_type = step_info["请求方式"]
-        param_variable_list = re.findall('\\${\w+}', step_info["请求参数(get)"])
-        if param_variable_list:
-            for param_variable in param_variable_list:
-                step_info["请求参数(get)"] = step_info["请求参数(get)"]\
-                    .replace(param_variable,'"%s"' % self.temp_variables.get(param_variable[2:-1]))
-        if request_type == "get":
-            result = self.__get( step_info )
-        elif request_type == "post":
-            data_variable_list = re.findall('\\${\w+}', step_info["提交数据（post）"])
-            if data_variable_list:
-                for param_variable in data_variable_list:
-                    step_info["提交数据（post）"] = step_info["提交数据（post）"] \
-                        .replace(param_variable, '"%s"' % self.temp_variables.get(param_variable[2:-1]))
-            result = self.__post( step_info )
-        else:
-            result = {'code':1,'result':'请求方式不支持'}
+        try:
+            request_type = step_info["请求方式"]
+            param_variable_list = re.findall('\\${\w+}', step_info["请求参数(get)"])
+            if param_variable_list:
+                for param_variable in param_variable_list:
+                    step_info["请求参数(get)"] = step_info["请求参数(get)"]\
+                        .replace(param_variable,'"%s"' % self.temp_variables.get(param_variable[2:-1]))
+            if request_type == "get":
+                result = self.__get( step_info )
+            elif request_type == "post":
+                data_variable_list = re.findall('\\${\w+}', step_info["提交数据（post）"])
+                if data_variable_list:
+                    for param_variable in data_variable_list:
+                        step_info["提交数据（post）"] = step_info["提交数据（post）"] \
+                            .replace(param_variable, '"%s"' % self.temp_variables.get(param_variable[2:-1]))
+                result = self.__post( step_info )
+            else:
+                result = {'code':1,'result':'请求方式不支持'}
+        except Exception as e:
+            result = {'code': 4,
+                      'result': '用例编号[%s]的[%s]步骤出现系统异常，原因：%s' % (step_info['测试用例编号'], step_info["测试用例步骤"], e.__str__())}
         return result
 
     def request_by_step(self,step_infos):

@@ -19,10 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9127f8d4-437a-40b3-a896-7ce93c6ae16a" name="Default Changelist" comment="second  commit   requests二次封装">
-      <change afterPath="$PROJECT_DIR$/common/check_utils.py" afterDir="false" />
+    <list default="true" id="9127f8d4-437a-40b3-a896-7ce93c6ae16a" name="Default Changelist" comment="断言封装，并整合到requests">
+      <change afterPath="$PROJECT_DIR$/samples/exception_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/s1_demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/check_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/check_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/requests_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/requests_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/testdata_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/testdata_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +71,7 @@
       <recent name="$PROJECT_DIR$/testcases" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.requests_utils">
+  <component name="RunManager" selected="Python.s1_demo">
     <configuration name="localconfig_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="API_CHAO" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,27 +85,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/localconfig_utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="log_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="API_CHAO" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/log_utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,12 +135,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="s1_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="API_CHAO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/samples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/samples/s1_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testdata_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="API_CHAO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/testdata_utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.s1_demo" />
+        <item itemvalue="Python.localconfig_utils" />
+        <item itemvalue="Python.testdata_utils" />
         <item itemvalue="Python.requests_utils" />
         <item itemvalue="Python.re01" />
-        <item itemvalue="Python.log_utils" />
-        <item itemvalue="Python.localconfig_utils" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594737443914</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="断言封装，并整合到requests">
+      <created>1595069631761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595069631761</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -199,7 +232,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second  commit   requests二次封装" />
-    <option name="LAST_COMMIT_MESSAGE" value="second  commit   requests二次封装" />
+    <MESSAGE value="断言封装，并整合到requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="断言封装，并整合到requests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="591" y="354" key="Github.ShareDialog" timestamp="1594136648714">
@@ -210,33 +244,38 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="512" y="162" key="Github.UntrackedFilesDialog/0.0.1440.900@0.0.1440.900" timestamp="1594136656413" />
-    <state width="1419" height="235" key="GridCell.Tab.0.bottom" timestamp="1594912985178">
+    <state width="1419" height="193" key="GridCell.Tab.0.bottom" timestamp="1595342654932">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="235" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594912985178" />
-    <state width="904" height="203" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1594654526275" />
+    <state width="1419" height="193" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595342654932" />
+    <state width="785" height="193" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1595341808909" />
     <state width="904" height="203" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1594547842858" />
-    <state width="1419" height="235" key="GridCell.Tab.0.center" timestamp="1594912985177">
+    <state width="1419" height="193" key="GridCell.Tab.0.center" timestamp="1595342654931">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="235" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594912985177" />
-    <state width="904" height="203" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1594654526273" />
+    <state width="1419" height="193" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595342654931" />
+    <state width="785" height="193" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1595341808908" />
     <state width="904" height="203" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1594547842857" />
-    <state width="1419" height="235" key="GridCell.Tab.0.left" timestamp="1594912985177">
+    <state width="1419" height="193" key="GridCell.Tab.0.left" timestamp="1595342654930">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="235" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594912985177" />
-    <state width="904" height="203" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1594654526272" />
+    <state width="1419" height="193" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595342654930" />
+    <state width="785" height="193" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1595341808907" />
     <state width="904" height="203" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1594547842856" />
-    <state width="1419" height="235" key="GridCell.Tab.0.right" timestamp="1594912985178">
+    <state width="1419" height="193" key="GridCell.Tab.0.right" timestamp="1595342654932">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="235" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594912985178" />
-    <state width="904" height="203" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1594654526274" />
+    <state width="1419" height="193" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595342654932" />
+    <state width="785" height="193" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1595341808909" />
     <state width="904" height="203" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1594547842857" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1594737455362">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1595069646094">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1594737455362" />
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1595069646094" />
+    <state x="154" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1595127774524">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="154" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1595127774524" />
   </component>
 </project>

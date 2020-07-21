@@ -37,8 +37,9 @@ class CheckUtils():
         }
 
 
-    def no_check(self):
+    def no_check(self,check_data=None):
         return self.pass_result
+
 
     def check_key(self,check_data=None):       #json键值是否存在
         check_data_list = check_data.split(',')
